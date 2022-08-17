@@ -1,0 +1,36 @@
+{
+  "name": "wangwin/demo",
+  "description": "这是一个测试包",
+  "type": "library",
+  "require-dev": {
+  },
+  "license": "mit",
+  "autoload": {
+    "psr-4": {
+      "Wangwin\\Weather\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wangwin\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "wangwen112255",
+      "email": "1205483453@qq.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wangwin\\Weather\\ServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^9.5",
+    "mockery/mockery": "^1.5",
+    "guzzlehttp/guzzle": "6.*"
+  }
+}
